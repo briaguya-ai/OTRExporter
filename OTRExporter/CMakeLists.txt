@@ -172,7 +172,7 @@ find_package(nlohmann_json REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC nlohmann_json::nlohmann_json)
 
 find_package(tinyxml2 REQUIRED)
-target_link_libraries(libultraship PUBLIC tinyxml2::tinyxml2)
+target_link_libraries(${PROJECT_NAME} PUBLIC tinyxml2::tinyxml2)
 
 if(MSVC)
     if("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x64")
